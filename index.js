@@ -71,4 +71,4 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
     }
 });
 
-client.login(MTU0NDU5NzIwNDYzNzk3ODY4NA.GbZ6UB.x-T8ChP47l5E76gaV0rPkhUbgFqDpstwPPiNWk);
+client.login(process.env.DISCORD_TOKEN);
